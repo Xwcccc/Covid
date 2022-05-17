@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.covid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+
+    <application
+      android:name="MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:allowBackup="false"
+      android:theme="@style/AppTheme">
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+        android:launchMode="singleTask"
+        android:windowSoftInputMode="adjustResize"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity>
+    </application>
+</manifest>
+
+        <!--
+        其余权限列表：
+           | 'android.permission.READ_CALENDAR'
+           | 'android.permission.WRITE_CALENDAR'
+           | 'android.permission.CAMERA'
+           | 'android.permission.READ_CONTACTS'
+           | 'android.permission.WRITE_CONTACTS'
+           | 'android.permission.GET_ACCOUNTS'
+           | 'android.permission.ACCESS_FINE_LOCATION'
+           | 'android.permission.ACCESS_COARSE_LOCATION'
+           | 'android.permission.RECORD_AUDIO'
+           | 'android.permission.READ_PHONE_STATE'
+           | 'android.permission.CALL_PHONE'
+           | 'android.permission.READ_CALL_LOG'
+           | 'android.permission.WRITE_CALL_LOG'
+           | 'com.android.voicemail.permission.ADD_VOICEMAIL'
+           | 'android.permission.USE_SIP'
+           | 'android.permission.PROCESS_OUTGOING_CALLS'
+           | 'android.permission.BODY_SENSORS'
+           | 'android.permission.SEND_SMS'
+           | 'android.permission.RECEIVE_SMS'
+           | 'android.permission.READ_SMS'
+           | 'android.permission.RECEIVE_WAP_PUSH'
+           | 'android.permission.RECEIVE_MMS'
+           | 'android.permission.READ_EXTERNAL_STORAGE'
+           | 'android.permission.WRITE_EXTERNAL_STORAGE';
+        -->
